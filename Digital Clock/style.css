@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+.container{
+    width: 30vw;
+    padding: 14px;
+    text-align: center;
+    margin: auto;
+    position:absolute;
+    background-color: aliceblue;
+    /* height: auto; */
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: rgb(130, 211, 227);
+    padding: 8px;
+    width: 75px;
+    border-radius: 5px;
+    cursor: pointer
+};
+
