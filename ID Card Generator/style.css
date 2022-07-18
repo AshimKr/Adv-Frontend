@@ -4,7 +4,7 @@
 }
 .main{
     width: 80vw;
-    height: 90vh;
+    /* height: 90vh; */
     /* margin: auto; */
     margin: 0;
     position: absolute;
@@ -14,12 +14,17 @@
     transform: translate(-50%, -50%);
     
 }
+
+#MainCard{
+    display: none;
+}
+
 .container{
     display: grid;
     grid-template-columns: auto auto;
-    border-radius: 0 10px;
+    border-radius: 0 0 10px 10px;
     border: 1px solid black;
-    height: 80vh;
+    height: 85vh;
 }
 
 header{
@@ -28,7 +33,7 @@ header{
     color: #fff;
     text-align: center;
     font-size: larger;
-    border-radius: 10px 0; 
+    border-radius: 10px 10px 0 0; 
 }
 .small-container{
     margin: 4px;
@@ -47,13 +52,16 @@ header{
 }
 
 .card{
-    background-color: rgb(235, 227, 227) !important;
-    height: 100% !important;
+    background-color: rgb(182, 221, 235) !important;
+    border-radius: 60px;
+    display:table-cell !important;
+    vertical-align: middle !important;
+    padding: 20px;
 }
 
 .image{
     height: 100% !important;
-    /* background-color: #536DFE; */
+    /* background-color: #536DFE !important; */
     margin: auto !important;
 }
 
@@ -63,4 +71,22 @@ header{
 
 h3{
     color: #536DFE;
+}
+
+/* #preview{
+    width: 30px;
+    height: 25px;
+} */
+
+.img-preview{
+
+    width: 100px;
+    height: 110px;
+    margin: 10px;
+    
+}
+
+#cardImage{
+    max-height: 180px;
+    max-width: 200px;
 }
